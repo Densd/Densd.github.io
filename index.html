@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/style.css">
+	<title>DiW</title>
+</head>
+<body>
+
+	<div class="global-wrapper" id="global-wrapper">
+		<div class="global-container">
+			<div class="left-container">
+				<img src="img/Logo.png" alt="Logo" class="logo">
+				<div class="button-container">
+					<button class="buttons global-buttons" onclick="close_candidats(); open_charter()">Устав</button>
+					<button class="buttons global-buttons" onclick="close_charter(); open_candidats()">Кандидатам</button>
+					<button class="buttons global-buttons" onclick="open_consist()">Состав</button>
+					<button class="buttons global-buttons" onclick="info_about()">Информация с вас</button>
+				</div>
+			</div>
+			<div class="right-container">
+				<p class="join-p">Присоединяйся сeйчас</p>
+				<div class="form-container" id="form-container">
+					<form action="" class="form"v id="form">
+						<input type="text" class="inputs" name="name" placeholder="*Ваше имя">
+						<input type="text" class="inputs" name="nick" placeholder="*Ваш ник">
+						<input type="text" class="inputs" name="skype" placeholder="*Ваш skype">
+						<button class="buttons form-button">подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#" onclick="close_charter(); close_candidats()"><img src="img/close.png" alt="close" class="close-button" id="close_button"></a>
+	<div class="charter-wrapper" id="charter-wrapper">
+		<p class="charter-tittle">Устав</p>
+		<p class="charter-text" id="charter-text1">
+			Гильдия действует и существует на основании законов 
+			игрового сервера <strong>Age of Power</strong>.
+			Полное название Гильдии: <strong>Devoted in War</strong>
+		</p>
+		<p class="charter-text" id="charter-text2">
+			<strong>Каждый мембер Гильдии обязан:</strong><br>
+	     &ensp;&ensp;2.1.Знать и соблюдать правила игрового сервера.<br>
+	     &ensp;&ensp;2.2.Знать и соблюдать устав Гильдии.<br>
+	     &ensp;&ensp;2.3.Беспрекословно подчиняться Гильдмастеру.<br>
+	     &ensp;&ensp;2.4.Поддерживать и укреплять статус Гильдии.<br>
+	     &ensp;&ensp;2.5.Хранить тайны Гильдии.<br>
+			<strong>Мемберам Гильдии запрещено:</strong><br>
+	     &ensp;&ensp;4.1.Нарушать устав Гильдии и правила игрового сервера.<br>
+	     &ensp;&ensp;4.2.Не подчиняться приказам Гильдмастера.<br>
+	     &ensp;&ensp;4.3.Обсуждать приказы Гильдмастера.
+  	</p>
+  	<p class="charter-text" id="charter-text3">
+  		<strong>
+  			При нарушении мембером устава Гильдии - будут<br>
+  			выноситься наказание.
+  		</strong>
+  	</p>
+  	<p class="charter-text" id="charter-text4">
+  		Основанием для исключения мембера из Гильдии являются<br>
+  		нарушения устава Гильдии или игрового сервера.<br>
+			Члены Гильдии поддерживают направление: <strong>Нетрал.</strong>
+	 	</p>
+	 	<button class="buttons charter-buttons" onclick="close_charter()">Назад</button>
+	</div>
+
+	<div class="candidats-wrapper" id="candidats-wrapper">
+		<p class="candidats-tittle">Кандидатам для вступления<br>
+															в гильдию</p>
+		<p class="candidats-text" id="candidats-text1">
+			1) Минимальный сумскилл <strong>3000</strong><br>
+			2) Статкап <strong>360</strong><br>
+			3) <strong>Положительная</strong> репутация на сервере.
+		</p>
+	 	<button class="buttons candidats-buttons" onclick="close_candidats()">Назад</button>
+	</div>
+	
+	<script src="main_js.js"></script>
+	<script> </script>
+</body>
+</html>
