@@ -11,6 +11,14 @@
 	background-color: #343d48;
 }
 
+.global-container-missclick{
+	width: 100%;
+	height: 100vh;
+	background-color: #343d48;
+	z-index: 0;
+	position: absolute;
+}
+
 /* Score */
 
 .score{
@@ -55,6 +63,7 @@
 	position: absolute;
 	animation-name: bomb-animation;
   animation-duration: 2s;
+  zindex: 2;
 }
 
 /* Plus Score */
@@ -75,6 +84,17 @@
 	animation-name: p-scorePlus-animation;
   animation-duration: 0.6s;
 }
+
+.pScoreMinus{
+	color: #ff0000;
+	font-weight: bold;
+	font-family: "PT Sans";
+	font-size: 40px;
+	animation-name: p-scorePlus-animation;
+  animation-duration: 0.6s;
+}
+
+
 
 @keyframes p-scorePlus-animation{
     0% {margin-top: 70px; opacity:0;}
@@ -212,5 +232,46 @@
 	}
 	100%{
 		opacity: 1;
+	}
+}
+
+/* Round 2 */
+
+.roundTwo_p{
+	font-family: PT Sans;
+	color: white;
+	font-size: 60px;
+	z-index:3;
+	position: absolute;
+	margin-top: 45vh;
+	margin-left: 42%;
+	animation-name: RoundTwoP-Animation;
+  animation-duration: 2.5s;
+}
+
+@keyframes RoundTwoP-Animation{
+	0%{
+		opacity:0;
+		font-size: 0px;
+		margin-left: 50%;
+		margin-top: 45vh;
+	}
+	25%{
+		opacity: 0.5;
+		font-size: 50px;
+		margin-left: 43%;
+		margin-top: 43vh;
+	}
+	50%{
+		opacity:1;
+		font-size: 120px;
+		margin-left: 35%;
+		margin-top: 35vh;
+	}
+	100%{
+		opacity:0;
+		font-size: 60px;
+		margin-left: 0%;
+		margin-top: 0vh;
 	}
 }
